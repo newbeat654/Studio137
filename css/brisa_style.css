@@ -1,0 +1,137 @@
+body{
+  display: flex;
+  background-color: blue;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.container{
+	position: relative;
+	top:-30px;
+	padding: 0;
+	margin: 0;
+	background-color: gray;
+	min-height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	/* padding: 15px; */
+}
+.glide__slides{
+	height: auto;
+}
+
+.element{
+	height: 107vh;
+	overflow: hidden;
+	align-items: center;
+}
+
+.element .tit{
+	position: absolute;
+	bottom: 23%;
+	z-index: 10;
+	width: 100%;
+	height: 100px;
+	/* background-color: blue; */
+}
+
+.element img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center;
+	transition: transform .3s;
+	cursor: auto;
+}
+#prevBtn{
+	width: 35px;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  left: 4%;
+  color: white;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+#nextBtn{
+	width: 35px;
+  position: absolute;
+  top: 50%;
+  z-index: 10;
+  right: 4%;
+  color: white;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.loader_container{
+	opacity: 1;
+	position: absolute;
+	width: 100%;
+	height: 100vh;
+	background-color: #191919;
+	z-index: 50;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logo_loader img{
+  opacity: 0.1;
+	width: 230px;
+}
+
+h1 {
+    position: absolute;
+    top: 3%;
+    right: 0.3%;
+    transform: translate(-50%, -50%);
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    opacity: 0.3;
+    z-index: 10;
+}
+
+.button {
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.button a {
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 40px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-size: 10px;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+
+.button:hover a {
+    background: white;
+    color: #161616;
+    transition: 0.3s;
+}
+
+.logo{
+	width: 115px;
+	position: absolute;
+  top: 0.3%;
+  z-index: 10;
+  left: 4%;
+  opacity: 0.3;
+}
+
+.logo_image{
+	width: 100%;
+}
